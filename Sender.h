@@ -17,7 +17,7 @@ T_SenorReadings m_sensorReadings;
      outputStream.append((sensor_str[sensorReadingsIt->first]));
      outputStream += space;
      ::std::vector<int> readings = sensorReadingsIt->second;
-     for(int i = 0; i<readings.size(); ++i)
+     for(size_t i = 0; i<readings.size(); ++i)
      {
        outputStream.append(::std::to_string(readings[i]));
        outputStream += space;
