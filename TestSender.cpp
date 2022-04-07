@@ -13,7 +13,7 @@ TEST_CASE("Check_Print_Sensor_Data_OnConsole")
   for(; sensorReadingsIt != m_sensorReadings.end(); ++sensorReadingsIt)
   {
     ::std::vector<int> readings = sensorReadingsIt->second;
-      REQUIRE(readings.size() == NUMBER_OF_Readings)
+      REQUIRE(readings.size() == NUMBER_OF_Readings);
   }
 
 }
