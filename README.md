@@ -76,12 +76,12 @@ This section lists the minimum functionality of the Sender and Receiver.
 
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using GitHub workflow yml files.
 
-Considering the following battery parameters
-- Battery State of Charge
+Considering the following battery Sensors
+- Voltage
 - Temperature
+- Current
 
 ## Test Specifications:
-- Generate the random temperature values
-- Generate the random Battery State of Charge
-- Convert these values to 10 bit A2D values
+- Generate the random values as the readings for respective sensors
+- format the data into csv format
 - Print the data from sensor on console
