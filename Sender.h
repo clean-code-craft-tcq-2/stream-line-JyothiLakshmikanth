@@ -7,13 +7,6 @@ using namespace std;
 
 T_SenorReadings m_sensorReadings;
 
-void getAndPrintSensorDataOnConsole(T_SenorReadings(*fn_ptr)(), void(*printFn_ptr)(::string))
-{
-    m_sensorReadings = fn_ptr();
-    ::string outputStream = prepareCSVOuptput(m_sensorReadings);
-    printFn_ptr(outputStream);
-}
-
 ::string prepareCSVOuptput(T_SenorReadings sensorReadings)
 {
   ::string outputStream;
@@ -37,4 +30,11 @@ void getAndPrintSensorDataOnConsole(T_SenorReadings(*fn_ptr)(), void(*printFn_pt
 void printOnConsole(::string outputStream)
 {
     ::cout<<outputStream<<endl;
+}
+
+void getAndPrintSensorDataOnConsole(T_SenorReadings(*fn_ptr)(), void(*printFn_ptr)(::string))
+{
+    m_sensorReadings = fn_ptr();
+    ::string outputStream = prepareCSVOuptput(m_sensorReadings);
+    printFn_ptr(outputStream);
 }
