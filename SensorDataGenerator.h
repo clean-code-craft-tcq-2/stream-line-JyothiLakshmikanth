@@ -42,7 +42,8 @@ T_SenorReadings SensorDataGenerator::prepareSensorReadingsMap()
  {
      T_SenorReadings sensorReadingsMap;
    sensorReadingsMap[TEMPERATURE] = generateTheReadings();
-   sensorReadingsMap[BATTERY_STATE_OF_CHARGE] = generateTheReadings();
+   sensorReadingsMap[CURRENT] = generateTheReadings();
+  sensorReadingsMap[VOLTAGE] = generateTheReadings();
    return sensorReadingsMap;
  }
 
