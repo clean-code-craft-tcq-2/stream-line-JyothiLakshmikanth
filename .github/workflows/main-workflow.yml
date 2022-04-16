@@ -16,13 +16,13 @@ jobs:
         sudo apt-get install -y gcovr
 
     - name: build sender
-      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage TestSender.cpp -o sender.exe
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage TestSender.cpp -o sender
 
     - name: run sender
       run: ./sender
 
     - name: build receiver
-      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage testReceiver.cpp receiver.c -o receiver.exe
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage testReceiver.cpp receiver.c -o receiver
 
     - name: pipeline sender + receiver
       run: ./sender | ./receiver  
