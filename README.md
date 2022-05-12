@@ -75,3 +75,20 @@ This section lists the minimum functionality of the Sender and Receiver.
 ## Quality Parameters
 
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using GitHub workflow yml files.
+
+Considering the following battery Sensors
+- Voltage
+- Temperature
+- Current
+
+Code Flow:
+- SensorDataGenerator generates 50 random values for each sensor on run of the code as they are static methods and stores in the map
+- Sender would call getReadings when the client request for getAndPrintSensorDataOnConsole
+- Once the readings are available Sender prints the values of the sensor readings onto the console
+
+## Test Specifications:
+- Generate the random values as the readings for respective sensors
+- Update in the map
+- Print the data for sensor from the map on console
+
+![alt text](https://www.planttext.com/api/plantuml/png/bL7H2i8m37plL_G7_04VP3B19vauyJsqOHPcLhhCxpTRArjb37ngoEKkbslHCmGUNgrINWfdd0TYRLg7n5chHh8OVbjz5qx0S4R20DpbkEa4Rr4fCEpUmBZAMEdftM5jLE-r3oWRC88t1EkewI_W_rDfOett9turbCLDbp6H92b1J2fy97iDZdXcL5IcgvToOtA9js6AnOzWys4v9svD2PJreney-u4NGodmQKfSpLxouqOtXJpoxHy0)
