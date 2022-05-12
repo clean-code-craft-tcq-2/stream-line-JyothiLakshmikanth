@@ -83,5 +83,5 @@ Considering the following battery Sensors
 
 ## Test Specifications:
 - Generate the random values as the readings for respective sensors
-- format the data into csv format
+- Update in the map
 - Print the data from sensor on console
